@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 0px;
+  background: rgba($color: $black, $alpha: .2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba($color: $blue-4, $alpha: 1);
+  border: 71px none rgba($color: $blue-4, $alpha: 1);
+}
+::-webkit-scrollbar-track {
+  background: rgba($color: $black, $alpha: .2);
+  border: 65px none rgba($color: $black, $alpha: .5);
+}
+
+body {
+  background-color: $gray-12;
+  overscroll-behavior: none;
+}
+
+#app {
+  width: 100%;
+  height: auto;
+  min-height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  background-color: $gray-12;
+}
